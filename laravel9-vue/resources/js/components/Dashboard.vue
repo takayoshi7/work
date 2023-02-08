@@ -301,7 +301,7 @@ const zipSet = () => {
         <div class="imgclass">
             <div class="imgArea">
                 <img v-if="img1" :src="img1" class="d_img">
-                <!-- <img v-else src="storage/img/no_image.jpg" class="d_img"> -->
+                <img v-else src="storage/img/no_image.jpg" class="d_img">
                 <v-btn v-if="img1" @click="imgDelete('image1')">画像削除</v-btn>
                 <div class="drop-zone" @dragenter="dragEnter" @dragleave="dragLeave" @dragover.prevent @drop.prevent="dropFile('image1')" :class="{enter: isEnter}">
                     画像をドラッグ＆ドロップ<br>もしくは<br>
@@ -318,7 +318,7 @@ const zipSet = () => {
             </div>
             <div class="imgArea">
                 <img v-if="img2" :src="img2" class="d_img">
-                <!-- <img v-else src="storage/img/no_image.jpg" class="d_img"> -->
+                <img v-else src="storage/img/no_image.jpg" class="d_img">
                 <v-btn v-if="img2" @click="imgDelete('image2')">画像削除</v-btn>
                 <div class="drop-zone" @dragenter="dragEnter" @dragleave="dragLeave" @dragover.prevent @drop.prevent="dropFile('image2')" :class="{enter: isEnter}">
                     画像をドラッグ＆ドロップ<br>もしくは<br>
