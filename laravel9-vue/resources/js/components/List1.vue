@@ -739,12 +739,12 @@ const imgSet = () => {
             <td>{{ datas.deptno }}</td>
             <td>
                 <img v-if="datas.img1" :src="'data:image/png;base64,' + datas.img1" class="listMyImg">
-                <img v-else src="storage/img/no_image.jpg" class="listMyImg">
+                <!-- <img v-else src="storage/img/no_image.jpg" class="listMyImg"> -->
                 <v-btn height="20" width="60" v-if="loginUseRole == 1 || loginUseRole == 3" @click.prevent="editImg(index, 'image1')">変更</v-btn>
             </td>
             <td>
                 <img v-if="datas.img2" :src="datas.img2" class="listMyImg">
-                <img v-else src="storage/img/no_image.jpg" class="listMyImg">
+                <!-- <img v-else src="storage/img/no_image.jpg" class="listMyImg"> -->
                 <v-btn height="20" width="60" v-if="loginUseRole == 1 || loginUseRole == 3" @click.prevent="editImg(index, 'image2')">変更</v-btn>
             </td>
             <td>{{ datas.name }}</td>
