@@ -434,7 +434,7 @@ function allDisp2() {
     <br>
 
     <!-- ページネーション -->
-    <!-- <ul v-if="data !== ''" class="pagination">
+    <ul v-if="data !== ''" class="pagination">
         <button v-if="page != 0" class="no_active" @click.prevent="pageChange(page)">prev</button>
         <li v-for="b_page in last_page" :key="b_page" class="getPageClass">
             <button v-if="b_page == page + 1" class="active" @click.prevent="pageChange(b_page)">{{ b_page }}</button>
@@ -442,9 +442,9 @@ function allDisp2() {
         </li>
         <button v-if="page != last_page - 1 && last_page != 1" class="no_active"
             @click.prevent="pageChange(page+2)">next</button>
-    </ul> -->
+    </ul>
 
-    <ul v-if="data !== ''" class="pagination">
+    <!-- <ul v-if="data !== ''" class="pagination">
         <button v-if="page != 0" class="no_active" @click.prevent="pageChange(page)">prev</button>
         <button v-if="page == 0" class="active" @click.prevent="pageChange(1)">1</button>
         <button v-else class="no_active" @click.prevent="pageChange(1)">1</button>
@@ -456,7 +456,7 @@ function allDisp2() {
         <button v-if="page + 1 == last_page" class="active" @click.prevent="pageChange(last_page)">{{ last_page }}</button>
         <button v-else class="no_active" @click.prevent="pageChange(last_page)">{{ last_page }}</button>
         <button v-if="page != last_page - 1 && last_page != 1" class="no_active" @click.prevent="pageChange(page + 2)">next</button>
-    </ul>
+    </ul> -->
 
     <!-- 絞り込み検索ダイアログ -->
     <v-dialog v-model="searchDialog" width="400">
